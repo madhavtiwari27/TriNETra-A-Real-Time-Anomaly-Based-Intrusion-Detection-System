@@ -55,3 +55,11 @@ The application's interface, built using **PyQt5**, provides immediate visual fe
 You will need **_Python 3.x_** and the following system dependencies:
 - **_tshark_** (The command-line tool for Wireshark, required by pyshark).
 - **_Root/Administrator Privileges_** (Required to capture raw packets on a network interface).
+
+### Installation
+
+1. Clone the repository:
+   ''' bash
+   git clone https://github.com/madhavtiwari27/TriNETra.git
+   cd TriNETra
+   '''
