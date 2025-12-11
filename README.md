@@ -3,6 +3,7 @@
 **TriNETra** is an innovative, high-performance Anomaly-Based Intrusion Detection System designed to monitor network traffic in real-time and proactively detect Denial of Service (DoS) and Probe attacks. It combines optimized machine learning (XGBoost/Decision Tree) with a novel **Genetic Algorithm (GA)** for feature selection and a dynamic **60-second sliding window** to ensure low-latency and highly sensitive detection.
 
 
+
 ## 💡 Key Features
 
 - **Real-Time Packet Capture:** Utilizes **_pyshark_** for continuous, high-speed capture and dissection of live network packets.
@@ -18,6 +19,7 @@
 - **Proactive Defense:** Provides early warnings against suspicious activities like port scanning and slow-rate probing.
 
 
+
 ## ⚙️ System Architecture & Workflow
 
 The **TriNETra** system operates via a streamlined, three-stage pipeline to achieve low-latency anomaly detection:
@@ -27,6 +29,7 @@ The **TriNETra** system operates via a streamlined, three-stage pipeline to achi
 2. **Optimized Classification:** The feature vector is fed into the highly efficient Decision Tree model, which utilizes the GA-optimized feature subset for maximum speed. The model classifies the traffic as **_Normal, DoS, or Probe_**.
 
 3. **Output & Control:** The **_ABNIDS.py_** orchestrator updates the **_PyQt5 GUI_** with real-time logs and filtered anomaly alerts, providing clear visual feedback to the operator.
+
 
 
 ## 📸 Interface Screenshots
@@ -43,4 +46,12 @@ The application's interface, built using **PyQt5**, provides immediate visual fe
 
    <img width="642" height="559" alt="Screenshot 2025-11-25 100648" src="https://github.com/user-attachments/assets/0ac9c45c-db15-452b-8fa3-c1ae56b483ba" />
 
-   
+
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+You will need **_Python 3.x_** and the following system dependencies:
+- **_tshark_** (The command-line tool for Wireshark, required by pyshark).
+- **_Root/Administrator Privileges_** (Required to capture raw packets on a network interface).
