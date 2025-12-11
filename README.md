@@ -64,3 +64,36 @@ You will need **_Python 3.x_** and the following system dependencies:
    git clone https://github.com/madhavtiwari27/TriNETra.git
    cd TriNETra
    ```
+
+2. Install the necessary Python libraries:
+
+   ```bash
+   pip install pyshark pandas scikit-learn numpy xgboost PyQt5 matplotlib
+   ```
+
+### Usage
+
+1. **Prepare Training Data:**
+
+   - Ensure your raw **_KDD-like_** training and testing datasets are prepared.
+   - Run the necessary data cleaning via **_Preprocess.py_** to convert categorical data to the required numerical format.
+  
+2. **Train the Model & Optimize Features:**
+
+   - Run the main GUI file:
+
+     ```bash
+     python ABNIDS.py
+     ```
+
+   - In the GUI, use the **_Train Model_** function to load your preprocessed training/testing datasets. This step will execute the **_Genetic Algorithm_** to find the optimal feature mask and train the final Decision Tree classifier.
+  
+3. **Start Real-Time Monitoring:**
+
+   - Select your network interface.
+   - Click the **_Start Monitoring_** button. The system will begin continuous real-time packet capture, feature extraction, and anomaly classification.
+   - Detected attacks will be logged in the **_Result Panel_**.
+
+
+
+## 📦 Project File Structure
