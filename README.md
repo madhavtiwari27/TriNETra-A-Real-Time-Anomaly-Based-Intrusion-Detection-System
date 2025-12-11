@@ -98,13 +98,13 @@ You will need **_Python 3.x_** and the following system dependencies:
 
 ## 📦 Project File Structure
 
-| File           | Role                         | Description |
+| **File**        | **Role**                         | **Description** |
 |----------------|------------------------------|-------------|
 | **ABNIDS.py**  | System Orchestrator & GUI    | Main executable. Manages the application lifecycle, GUI (PyQt5), thread control, and visualization. |
 | **packet.py**  | Feature Engineering Core     | Handles real-time packet dissection (pyshark), calculates the 18 statistical features, and implements the critical 60-second history timeout logic. |
 | **classifier.py** | ML Prediction Logic       | Defines the Decision Tree Classifier, trains the model with the GA feature mask, and maps numerical outputs (0–9) to attack labels (Normal, DoS, Probe). |
 | **tree.py**    | GA Controller                | High-level orchestration of the Genetic Algorithm, including population initialization, fitness evaluation, selection, crossover, and mutation. |
 | **class_.py**  | GA Population Manager        | Manages the collection of Individual (chromosome) objects and implements the core reproduction mechanics (crossover, mutation). |
-| **Individual.py** | GA Chromosome Unit       | Defines the feature mask (chromosome) and calculates its own fitness score by calling `classifier.get_fitness`. |
+| **Individual.py** | GA Chromosome Unit       | Defines the feature mask (chromosome) and calculates its own fitness score by calling classifier.get_fitness. |
 | **Preprocess.py** | Data Preprocessing        | Offline script to clean raw datasets, map categorical values (protocol, service, attack names) to numerical representations, and select the 18 relevant features. |
 | **XGB.py**     | Benchmark Script             | Standalone script to train and evaluate an XGBoost Classifier as a performance benchmark against the main Decision Tree model. |
