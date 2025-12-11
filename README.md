@@ -4,3 +4,5 @@
 
 
 ## 💡 Key Features
+
+- **Real-Time Packet Capture:** Utilizes _pyshark_ for continuous, high-speed capture and dissection of live network packets.
