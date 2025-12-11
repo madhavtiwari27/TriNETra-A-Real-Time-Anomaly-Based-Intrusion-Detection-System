@@ -37,11 +37,13 @@ The **TriNETra** system operates via a streamlined, three-stage pipeline to achi
 The application's interface, built using **PyQt5**, provides immediate visual feedback on the system's status and detected anomalies.
 
 1. **Main Monitoring Dashboard**
+   
    This view shows the primary window with the control panel, the **_Capturing Panel_** (live traffic logs), and the **_Result Panel_** (filtered anomalies).
 
    <img width="910" height="883" alt="Screenshot 2025-11-25 100354" src="https://github.com/user-attachments/assets/4d7b5e71-de02-4c09-bf61-b408b9c7ef90" />
 
 2. **Post-Monitoring Visualization**
+   
    After monitoring is stopped, the system generates a graphical summary of the session's findings, detailing the total count of classified traffic.
 
    <img width="642" height="559" alt="Screenshot 2025-11-25 100648" src="https://github.com/user-attachments/assets/0ac9c45c-db15-452b-8fa3-c1ae56b483ba" />
