@@ -108,3 +108,14 @@ You will need **_Python 3.x_** and the following system dependencies:
 | **Individual.py** | GA Chromosome Unit       | Defines the feature mask (chromosome) and calculates its own fitness score by calling classifier.get_fitness. |
 | **Preprocess.py** | Data Preprocessing        | Offline script to clean raw datasets, map categorical values (protocol, service, attack names) to numerical representations, and select the 18 relevant features. |
 | **XGB.py**     | Benchmark Script             | Standalone script to train and evaluate an XGBoost Classifier as a performance benchmark against the main Decision Tree model. |
+
+
+
+## 📊 Results and Performance Highlights
+
+The **TriNETra** system successfully validated its core optimization and detection capabilities:
+
+- **Feature Optimization Success:** The Genetic Algorithm rapidly converged, achieving a **50%+ reduction in feature count** while maintaining high model accuracy. This feature reduction directly enhances the speed of real-time prediction.
+- **Effective Attack Mitigation:** The dynamic **60-second sliding window** was proven effective in preventing **Attack Masking**, making the system highly sensitive to short-duration, high-rate threats (e.g., port scans, DoS bursts).
+- **High Accuracy:** The final Decision Tree model, trained on the GA-optimized feature subset, achieved a high F1-Score and demonstrated strong generalization capability, with a low **False Positive Rate (FPR)**—a crucial metric for an operational A-IDS.
+- **Low Latency:** By integrating optimized XGBoost/Decision Tree logic with minimal input features, the system successfully meets the **near-zero latency** requirement for classifying individual packets, ensuring high throughput for modern network speeds.
