@@ -1,0 +1,1 @@
+# TriNETra: A Real-Time Anomaly Based Intrusion Detection System
