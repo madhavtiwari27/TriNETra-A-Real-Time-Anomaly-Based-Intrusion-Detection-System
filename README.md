@@ -59,7 +59,8 @@ You will need **_Python 3.x_** and the following system dependencies:
 ### Installation
 
 1. Clone the repository:
-   ''' bash
+   
+   '''bash
    git clone https://github.com/madhavtiwari27/TriNETra.git
    cd TriNETra
    '''
